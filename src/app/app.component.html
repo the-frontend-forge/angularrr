@@ -1,4 +1,14 @@
-<app-header></app-header>
-<app-footer></app-footer>
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<main>
+  <div class="wrapper" role="main">
+    <app-header class="header"></app-header>
+    <aside app-nav class="nav"></aside>
+
+    <div class="content">
+      <app-about-section></app-about-section>
+      <app-portfolio-section></app-portfolio-section>
+      <app-contact-section></app-contact-section>
+    </div>
+
+    <app-footer class="footer"></app-footer>
+  </div>
+</main>

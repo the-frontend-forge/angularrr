@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* ----------------------------------------------------------------------------
+  1.  add all "_partial-name.scss" partial files in the styles
+      directory, and then add in main.scss (same dir level) with `@use`.
+
+  2.  the only additions made to this file should consist of styles that
+      are unattached to components.
+---------------------------------------------------------------------------- */
+/* main.scss is the collection of all partial stylesheets, variables, and mixins */
+@use "./assets/styles/main.scss";

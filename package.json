@@ -3,12 +3,14 @@
   "version": "0.1",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "dev": "nx serve -o",
     "build": "nx build",
-    "predeploy": "npm run build -- --prod --baseHref=/angularrr/",
     "deploy": "gh-pages -d dist/the-frontend-forge",
+    "dev": "nx serve -o",
     "graph": "nx graph",
+    "nx": "nx",
+    "nxc": "nx g @nx/angular:component $1 --standalone=true",
+    "predeploy": "npm run build -- --prod --baseHref=/angularrr/",
+    "start": "nx serve",
     "test": "nx test"
   },
   "private": true,

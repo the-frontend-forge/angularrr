@@ -1,0 +1,52 @@
+.nav {
+  margin-top: 5.25rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 1.5rem;
+      margin-left: -22px;
+      position: relative;
+      text-align: center;
+      rotate: 25deg;
+      width: 210px;
+
+      a {
+        color: var(--off-black);
+        cursor: pointer;
+        display: block;
+        font-weight: 700;
+        padding: 1rem 0 0.75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:first-child {
+        background: url('/assets/img/btn-about.png') no-repeat 0 0;
+        background-size: 100%;
+        margin-bottom: 0.85rem;
+        width: 250px;
+      }
+
+      &:nth-child(2) {
+        background: url('/assets/img/btn-work.png') no-repeat 0 0;
+        background-size: 100%;
+      }
+
+      &:last-child {
+        background: url('/assets/img/btn-contact.png') no-repeat 0 0;
+        background-size: 100%;
+      }
+    }
+  }
+}
