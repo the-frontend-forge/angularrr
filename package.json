@@ -6,6 +6,8 @@
     "start": "nx serve",
     "dev": "nx serve -o",
     "build": "nx build",
+    "predeploy": "npm run build -- --prod --baseHref=/the-frontend-forge/",
+    "deploy": "gh-pages -d dist/the-frontend-forge",
     "graph": "nx graph",
     "test": "nx test"
   },
@@ -20,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
     "@nx/angular": "16.10.0",
+    "gh-pages": "^6.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
