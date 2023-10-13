@@ -1,10 +1,12 @@
 {
   "name": "the-frontend-forge",
-  "version": "0.0.0",
+  "version": "0.1",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
+    "dev": "nx serve -o",
     "build": "nx build",
+    "graph": "nx graph",
     "test": "nx test"
   },
   "private": true,
