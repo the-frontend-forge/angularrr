@@ -6,6 +6,9 @@ nav {
     list-style: none;
 
     li {
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
       margin-bottom: 1.5rem;
       margin-left: -22px;
       position: relative;
@@ -28,18 +31,15 @@ nav {
       }
 
       &:first-child {
-        background: url('../../assets/images/btn-about.png') no-repeat 0 0;
-        background-size: cover;
+        background-image: url('../../assets/images/btn-about.png');
       }
 
       &:nth-child(2) {
-        background: url('../../assets/images/btn-work.png') no-repeat 0 0;
-        background-size: cover;
+        background-image: url('../../assets/images/btn-work.png');
       }
 
       &:last-child {
-        background: url('../../assets/images/btn-contact.png') no-repeat 0 0;
-        background-size: cover;
+        background-image: url('../../assets/images/btn-contact.png');
       }
     }
   }
