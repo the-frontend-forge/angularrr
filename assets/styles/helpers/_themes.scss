@@ -1,0 +1,39 @@
+/*  ---------------------------------------------------------------------------
+    Theme Options
+---------------------------------------------------------------------------  */
+$themes: (
+  default: #000000,
+  light: #FEFEFE,
+  dark: #000000,
+);
+
+// Helper theme mixin
+// @param $name: name of the theme (HTML class)
+// @param $color: color of the theme
+@mixin theme($name, $color) {
+  .#{$name} {
+    .component {
+      border-color: darken($color, 10%);
+    }
+
+    .component__heading {
+      color: $color;
+    }
+
+    .component__list-item {
+      background: lighten($color, 45%);
+    }
+  }
+
+  [data-theme='#{$name}'] {
+    background: $color;
+
+    &:hover {
+      background: darken($color, 10%);
+    }
+
+    &[disabled] {
+      background: desaturate($color, 40%);
+    }
+  }
+}
