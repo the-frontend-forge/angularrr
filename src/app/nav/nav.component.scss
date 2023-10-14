@@ -29,19 +29,17 @@ nav {
 
       &:first-child {
         background: url('../../assets/images/btn-about.png') no-repeat 0 0;
-        background-size: 100%;
-        margin-bottom: 0.85rem;
-        width: 250px;
+        background-size: cover;
       }
 
       &:nth-child(2) {
         background: url('../../assets/images/btn-work.png') no-repeat 0 0;
-        background-size: 100%;
+        background-size: cover;
       }
 
       &:last-child {
         background: url('../../assets/images/btn-contact.png') no-repeat 0 0;
-        background-size: 100%;
+        background-size: cover;
       }
     }
   }
