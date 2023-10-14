@@ -18,8 +18,8 @@
 
 body {
   background-color: var(--off-black);
-  background-image: url('/assets/img/bg-img-cobwebs.png'),
-                    url('/assets/img/bg-img.png');
+  background-image: url('/assets/images/bg-img-cobwebs.png'),
+                    url('/assets/images/bg-img.png');
   background-repeat:  no-repeat,
                       no-repeat;
   background-position:  center 0,
@@ -45,7 +45,7 @@ a:visited {
 }
 
 .wrapper {
-  background: url('/assets/img/bg-main-content.png') repeat center 156px;
+  background: url('/assets/images/bg-main-content.png') repeat center 156px;
   background-attachment: fixed;
   max-width: 1100px;
   margin: 0 auto 0;
@@ -77,14 +77,14 @@ a:visited {
 
 /* section: about, portfolio, projects, contact shared styles*/
 h3 {
-  background: url('/assets/img/bg-section.png') repeat 0 0;
+  background: url('/assets/images/bg-section.png') repeat 0 0;
   line-height: 1;
   margin-top: 2rem;
   padding: 1rem 0 1rem 3rem;
 }
 
 section {
-  background: url('/assets/img/bg-section.png') repeat 0 0;
+  background: url('/assets/images/bg-section.png') repeat 0 0;
   margin-top: 1rem;
   padding: 1.5rem 3rem;
 }
