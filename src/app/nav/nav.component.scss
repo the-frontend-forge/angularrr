@@ -1,7 +1,3 @@
-.nav {
-  margin-top: 5.25rem;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -32,19 +28,19 @@ nav {
       }
 
       &:first-child {
-        background: url('/assets/img/btn-about.png') no-repeat 0 0;
+        background: url('../../assets/images/btn-about.png') no-repeat 0 0;
         background-size: 100%;
         margin-bottom: 0.85rem;
         width: 250px;
       }
 
       &:nth-child(2) {
-        background: url('/assets/img/btn-work.png') no-repeat 0 0;
+        background: url('../../assets/images/btn-work.png') no-repeat 0 0;
         background-size: 100%;
       }
 
       &:last-child {
-        background: url('/assets/img/btn-contact.png') no-repeat 0 0;
+        background: url('../../assets/images/btn-contact.png') no-repeat 0 0;
         background-size: 100%;
       }
     }
