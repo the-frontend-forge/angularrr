@@ -1,17 +1,24 @@
 header {
-  grid-area: header;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  grid-area: header;
   height: 126px;
+  justify-content: flex-start;
+  padding-top: 0.25rem;
 
   @media screen and (max-width: 768px) {
     padding-top: 1rem;
   }
 
   a {
-    display: block;
+    display: inline-flex;
     align-self: start;
+  }
+
+  .tff-logo {
+    display: inline-flex;
+    width: 170px;
+    margin: 61px 0 0 -44px;
   }
 
   h1 {
