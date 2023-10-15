@@ -2,6 +2,7 @@
 // @use "./mixins";
 @use "./helpers/themes";
 @use "./helpers/variables";
+@use "./components/sections";
 
 /* ronin styles */
 :host {
@@ -17,17 +18,12 @@
 }
 
 body {
+  background-attachment:  fixed, scroll;
   background-color: var(--off-black);
-  background-image: url('../images/bg-img-cobwebs.png'),
-                    url('../images/bg-img.png');
-  background-repeat:  no-repeat,
-                      no-repeat;
-  background-position:  center 0,
-                        center 0;
-  background-size:  100%,
-                    auto;
-  background-attachment:  fixed,
-                          scroll;
+  background-image: url('../images/bg-img-cobwebs.png'), url('../images/bg-alt.jpg');
+  background-position:  center 0;
+  background-repeat:  no-repeat;
+  background-size:  100%;
   color: var(--primary-color);
   font-family: 'Anybody', sans-serif;
   line-height: 1.3125;
@@ -45,24 +41,21 @@ a:visited {
 }
 
 .wrapper {
-  background: url('../images/bg-main-content.png') repeat center 156px;
+  background: url('../images/bg-main-content.png') no-repeat center 156px;
   background-attachment: fixed;
-  background-size: contain;
-  max-width: 1100px;
-  margin: 0 auto 0;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 126px calc(100% - 126px);
   grid-template-areas:
     "header header header header"
     "nav main main main"
     "footer footer footer footer";
+  margin: 0 auto 0;
+  max-width: 1100px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
+    grid-template-areas: "header" "main" "footer";
     padding: 0 1.5rem;
   }
 }
@@ -91,27 +84,5 @@ a:visited {
 
   @media screen and (max-width: 768px) {
     margin-top: 3rem;
-  }
-}
-
-/* section: about, portfolio, projects, contact shared styles*/
-h3 {
-  background: url('../images/bg-section.png') repeat 0 0;
-  line-height: 1;
-  margin-top: 2rem;
-  padding: 1rem 0 0.8rem 3rem;
-
-  @media screen and (max-width: 768px) {
-    padding-left: 1rem;
-  }
-}
-
-section {
-  background: url('../images/bg-section.png') repeat 0 0;
-  margin-top: 1rem;
-  padding: 1.5rem 3rem;
-
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
   }
 }
