@@ -2,7 +2,7 @@
 h3 {
   background: url('../../images/bg-section.png') repeat 0 0;
   line-height: 1;
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 1rem 0 0.8rem 3rem;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -33,6 +33,6 @@ section {
 .card {
 
   & + .card {
-    margin-top: 1.5rem;
+    margin-top: 2.25rem;
   }
 }
