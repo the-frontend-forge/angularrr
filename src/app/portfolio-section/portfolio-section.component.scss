@@ -1,3 +1,21 @@
+a {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--brand-color);
+  }
+}
+
+p {
+  text-indent: 1.5rem;
+}
+
+h2 {
+  display: block;
+}
+
 .logos {
 
   ul {
@@ -17,4 +35,8 @@
       }
     }
   }
+}
+
+hr {
+  border-color: orange;
 }

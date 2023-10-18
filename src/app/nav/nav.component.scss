@@ -31,15 +31,15 @@ nav {
       }
 
       &:first-child {
-        background-image: url('../../assets/images/btn-about.png');
+        background-image: url('../../assets/images/cta-about.png');
       }
 
       &:nth-child(2) {
-        background-image: url('../../assets/images/btn-work.png');
+        background-image: url('../../assets/images/cta-work.png');
       }
 
       &:last-child {
-        background-image: url('../../assets/images/btn-contact.png');
+        background-image: url('../../assets/images/cta-contact.png');
       }
     }
   }

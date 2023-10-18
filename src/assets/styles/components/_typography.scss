@@ -1,0 +1,41 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+h3 {
+  background: url('../../images/bg-section.png') repeat 0 0;
+  line-height: 1;
+  margin-top: 4rem;
+  padding: 1rem 0 0.8rem 3rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 1rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: 200
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
