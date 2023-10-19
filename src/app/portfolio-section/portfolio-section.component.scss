@@ -1,14 +1,9 @@
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
   Portfolio Section Specific Styles
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-h2 {
-  display: block;
-  text-align: center;
-}
+h3 {}
 
-p {
-  text-indent: 1.5rem;
-}
+p {}
 
 a {
   display: inline-block;
@@ -43,9 +38,14 @@ a {
         display: block;
         width: 9rem;
         margin: 0 auto;
-
-        &.v8-l {}
       }
     }
+  }
+}
+
+.card {
+
+  & + h3 {
+    margin-top: 2.5rem;
   }
 }
