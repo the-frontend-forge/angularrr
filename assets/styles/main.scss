@@ -1,11 +1,16 @@
 // @use "./breakpoints";
 // @use "./mixins";
+@use 'sass:color';
 @use "./helpers/themes";
 @use "./helpers/variables";
 @use "./components/sections";
 @use "./components/typography";
 
 /* ronin styles */
+::selection {
+  background-color: #f5842e70;
+}
+
 :host {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +62,7 @@ a:visited {
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer";
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 }
 
