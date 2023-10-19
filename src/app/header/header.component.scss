@@ -19,6 +19,10 @@ header {
     display: inline-flex;
     width: 170px;
     margin: 61px 0 0 -44px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   h1 {

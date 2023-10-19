@@ -1,42 +1,51 @@
-a {
-  display: inline-block;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--brand-color);
-  }
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+  Portfolio Section Specific Styles
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+h2 {
+  display: block;
+  text-align: center;
 }
 
 p {
   text-indent: 1.5rem;
 }
 
-h2 {
-  display: block;
-}
+a {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
 
-.logos {
-
-  ul {
-    align-items: center;
-    display: flex;
-    // flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem 5%;
-    // justify-content: space-between;
-
-    li {
-      width: 20%;
-
-      img {
-        display: block;
-        max-width: 100%;
-      }
-    }
+  &:hover {
+    color: var(--highlight-color);
   }
 }
 
-hr {
-  border-color: orange;
+.logos {
+  background-color: rgba(25, 25, 25, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  ul {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 2rem;
+    // flex-direction: row;
+    // justify-content: space-between;
+
+    li {
+      list-style: none;
+      width: 30%;
+      margin: 0 auto;
+
+      img {
+        display: block;
+        width: 9rem;
+        margin: 0 auto;
+
+        &.v8-l {}
+      }
+    }
+  }
 }
