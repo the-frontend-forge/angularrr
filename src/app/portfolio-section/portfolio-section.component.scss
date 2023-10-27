@@ -1,8 +1,6 @@
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
   Portfolio Section Specific Styles
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-h3 {}
-
 p {}
 
 a {
@@ -12,40 +10,5 @@ a {
 
   &:hover {
     color: var(--highlight-color);
-  }
-}
-
-.logos {
-  background-color: rgba(25, 25, 25, 0.2);
-  padding: 1rem;
-  border-radius: 0.5rem;
-
-  ul {
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem 2rem;
-    // flex-direction: row;
-    // justify-content: space-between;
-
-    li {
-      list-style: none;
-      width: 30%;
-      margin: 0 auto;
-
-      img {
-        display: block;
-        width: 9rem;
-        margin: 0 auto;
-      }
-    }
-  }
-}
-
-.card {
-
-  & + h3 {
-    margin-top: 2.5rem;
   }
 }
