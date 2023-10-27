@@ -2,7 +2,7 @@
 section {
   background: url('../../images/bg-section.png') repeat 0 0;
   margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 3.5rem;
 
   @media screen and (max-width: 768px) {
     padding: 1rem;
@@ -16,12 +16,31 @@ section {
       margin-top: 0;
     }
   }
-}
 
-.card {
-  margin-top: 1.25rem;
+  .logo-carousel {
+    background-color: rgba(25, 25, 25, 0.25);
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    -webkit-background-clip: padding-box; /* for Safari */
+    border: 18px solid rgba(25, 25, 25, 0.25);
+    border-left: 0;
+    border-right: 0;
+    border-radius: 1.25rem;
+  }
 
-  & + .card {
-    margin-top: 4rem;
+  h3 {
+    border-bottom: 2px solid orange;
+    padding-bottom: 0.5rem;
+  }
+
+  .card {
+    margin-top: 1.25rem;
+
+    & + .card {
+      margin-top: 4rem;
+    }
+
+    & + h3 {
+      margin-top: 5.5rem;
+    }
   }
 }
