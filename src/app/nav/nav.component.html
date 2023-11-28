@@ -1,7 +1,7 @@
-<nav #position>
+<nav>
   <ul>
-    <li class="about"><a href="#about">about</a></li>
-    <li class="portfolio"><a href="#portfolio">portfolio</a></li>
-    <li class="contact"><a href="#contact">contact</a></li>
+    <li *ngFor="let link of links" [ngClass]="clickedLinkName === link.name ? 'active' : ''">
+      <a (click)="handleClick(link.name)" href="{{link.href}}" fragment="contact">{{link.name}}</a>
+    </li>
   </ul>
 </nav>

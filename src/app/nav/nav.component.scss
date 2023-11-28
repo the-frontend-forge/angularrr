@@ -1,3 +1,6 @@
+/* –––———––––––––––––––––––––––––––––––––––––––––––––––––––––––
+  @Styles: "Navigation" Section
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   position: fixed;
   display: flex;
@@ -7,15 +10,24 @@ nav {
     list-style: none;
 
     li {
+      background-image: url('../../assets/images/cta-about.png');
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: cover;
-      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
       margin-left: -22px;
       position: relative;
       text-align: center;
       rotate: 25deg;
       width: 210px;
+      top: 0;
+      left: 0;
+      transition: all 0.4s ease-in-out;
+
+      &.active {
+        top: 1.125rem;
+        left: 2.25rem;
+      }
 
       a {
         color: var(--off-black);
@@ -33,6 +45,7 @@ nav {
 
       &:first-child {
         background-image: url('../../assets/images/cta-about.png');
+        margin-top: 0;
       }
 
       &:nth-child(2) {

@@ -7,7 +7,9 @@
 @use "./components/typography";
 @use "./components/logo-carousel";
 
-/* ronin styles */
+/*
+ronin styles
+-----------*/
 ::selection {
   background-color: #f5842e70;
 }
@@ -18,14 +20,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,7 +58,7 @@ a:visited {
   background: url('../images/bg-main-content.png') no-repeat center 156px;
   background-attachment: fixed;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-rows: 126px calc(100% - 126px);
   grid-template-areas:
     "header header header header"

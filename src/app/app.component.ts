@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
@@ -7,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 // components - different section elements for homepage. Can use routes when content gets too big.
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
+import { ResourcesSectionComponent } from './resources-section/resources-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @Component({
@@ -18,6 +20,7 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     HeaderComponent,
     NavComponent,
     PortfolioSectionComponent,
+    ResourcesSectionComponent,
     RouterModule
   ],
   selector: 'app-root',
