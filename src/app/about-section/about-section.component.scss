@@ -1,13 +1,63 @@
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
   @Styles: "About" Section
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.logo-carousel {
+
+/* Animated Logo Slider */
+.logo-slider {
+  background-color: rgba(25, 25, 25, 0.25);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 6rem;
+    z-index: 2;
+  }
+
+  &::before {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    left: 0;
+  }
+
+  &::after {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    right: 0;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 
   ul {
-    gap: 1.5rem 5%;
+    animation: 90s slide infinite linear;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+
+    &:hover {
+      animation-play-state: paused;
+    }
 
     li {
-      width: 16%;
+      display: inline-block;
+      margin: 0 1.5rem;
+
+      img {
+        height: 4rem;
+      }
     }
   }
 }
