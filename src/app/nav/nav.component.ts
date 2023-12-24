@@ -14,16 +14,20 @@ export class NavComponent {
 
   links = [
     {
-      href: '#about',
-      name: 'about'
+      href: "#about",
+      name: "about"
     },
     {
-      href: '#portfolio',
-      name: 'portfolio'
+      href: "#portfolio",
+      name: "portfolio"
     },
+    // {
+    //   href: "#resources",
+    //   name: "resources"
+    // },
     {
-      href: '#contact',
-      name: 'contact'
+      href: "#contact",
+      name: "contact"
     }
   ];
 

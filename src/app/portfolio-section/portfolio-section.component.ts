@@ -8,4 +8,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './portfolio-section.component.html',
   styleUrls: ['./portfolio-section.component.scss'],
 })
-export class PortfolioSectionComponent {}
+export class PortfolioSectionComponent {
+  projects = [
+    {
+      name: 'SoFi',
+      logo: './assets/images/logo-sofi.svg'
+    },
+    {
+      name: 'Rain',
+      logo: './assets/images/logo-rain.png'
+    },
+    {
+      name: 'Arby\'s',
+      logo: './assets/images/logo-arbys.png'
+    }
+  ];
+}
