@@ -1,9 +1,10 @@
-/* ----------------------------------------------------------------------------
-  1.  add all "_partial-name.scss" partial files in the styles
-      directory, and then add in main.scss (same dir level) with `@use`.
+/* ————————————————————————————————————————————————————————————————————————————
+  1. Import all partials in the "assets/styles/main.scss" file, not here,
+  with `@use` keyword. For example: `@use "./components/typography";`
 
-  2.  the only additions made to this file should consist of styles that
-      are unattached to components.
----------------------------------------------------------------------------- */
-/* main.scss is the collection of all partial stylesheets, variables, and mixins */
+  2. There shouldn't be any nedd to add any section component stylesheets.
+
+  3. The styles.css file combines and generates every partial stylesheet, 
+  including variables, and mixins.
+———————————————————————————————————————————————————————————————————————————— */
 @use "./assets/styles/main.scss";

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// const slideDuplicate = document.querySelector('.logo-slider ul')?.cloneNode(true);
-// document.querySelector('.logo-slider')?.appendChild(slideDuplicate);
+// const slideDuplicate = document.querySelector('.tech-stack-slider ul')?.cloneNode(true);
+// document.querySelector('.tech-stack-slider')?.appendChild(slideDuplicate);
 
 @Component({
   selector: 'app-about-section',

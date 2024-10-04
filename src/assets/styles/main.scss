@@ -1,3 +1,6 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
+  @Section: All partial, variable, and mixin sass files go here
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
 // @use "./breakpoints";
 // @use "./mixins";
 @use 'sass:color';
@@ -7,9 +10,9 @@
 @use "./components/typography";
 @use "./components/logo-carousel";
 
-/*
-ronin styles
------------*/
+/**
+  ronin styles
+——————————————————— */
 ::selection {
   background-color: #f5842e70;
 }
@@ -27,7 +30,7 @@ ronin styles
 }
 
 html {
-  scroll-behavior: smooth; // Like Jazz
+  scroll-behavior: smooth;
 }
 
 body {
