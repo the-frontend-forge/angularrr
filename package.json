@@ -9,7 +9,7 @@
     "graph": "nx graph",
     "nx": "nx",
     "nxc": "nx g @nx/angular:component $1 --standalone=true",
-    "predeploy": "npm run build -- --prod --baseHref=/angularrr/",
+    "predeploy": "npm run build -- --prod --baseHref=/thefrontendforge/",
     "start": "nx serve",
     "test": "nx test"
   },
